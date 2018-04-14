@@ -1,1 +1,4 @@
+nose
+tornado
+numpy>=1.5
 django
