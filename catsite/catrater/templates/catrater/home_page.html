@@ -13,7 +13,10 @@
 		text-align: center;
 		text-decoration: none;
 	}
-
+	h2 {
+		text-align: left;
+		color: #76200b;
+	}
 	h3 {
 		color: black;
 		text-align: center;
@@ -23,12 +26,11 @@
 	    margin: 0;
 	    padding: 0;
 	    overflow: hidden;
-	    background-color: #333333;
+	    background-color: #222222;
 	}
 
 	li {
 	    float: left;
-	    padding: 16px;
 	}
 
 	li a {
@@ -50,17 +52,23 @@
 		</div>
 
 		<br>
-		
+
 		<div>
 			<h3>Rate cats below</h3>
 		<div>
 
 		<div>
-			<ul>
-				<li><a href="">cat1</a></li>
-				<li><a href="">cat2</a></li>
-				<li><a href="">cat3</a></li>
-			</ul>
+			<!-- Using django tags-->
+			{% for cat in cats %}
+				<div>
+					<h2>{{ cat.name }}</h2>
+					<img src= "{{ cat.photo }}" alt="Cat photo" height="200" width="200">
+					<br>
+					<em>"{{ cat.description }}"</em>
+					<p>Hearts: {{ cat.hearts }}</p>
+					<br><br>
+				</div>
+			{% endfor %}
 		</div>
 	</body>
 </html>
