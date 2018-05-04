@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<html>
+	<head>
+		<title>Cutest Cat</title>
+		<!-- adding bootstrap -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+	</head>
+	<body>
+		<div>
+			<h1><a href="/">Cutest Cat</a></h1>
+		</div>
+
+		<br>
+
+		<div>
+			<h3>Rate cats below</h3>
+		<div>
+
+		<div>
+			<!-- Using django tags-->
+			{% for cat in cats %}
+				<div>
+					<h4><a href="">{{ cat.name }}</a></h4>
+					<img src= "{{ cat.photo }}" alt="Cat photo" height="200" width="200">
+					<br>
+					<em>"{{ cat.description }}"</em>
+					<p>Hearts: {{ cat.hearts }}</p>
+					<br><br>
+				</div>
+			{% endfor %}
+		</div>
+	</body>
+</html>
