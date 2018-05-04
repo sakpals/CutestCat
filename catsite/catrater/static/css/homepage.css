@@ -34,6 +34,11 @@ h3 {
 	color: black;
 	text-align: center;
 }
+
+h4 a {
+	font-family: 'Comfortaa', cursive;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
