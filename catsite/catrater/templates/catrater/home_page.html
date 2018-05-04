@@ -5,20 +5,22 @@
 		<!-- adding bootstrap -->
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		 <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
 		<link rel="stylesheet" href="{% static 'css/homepage.css' %}">
 	</head>
 	<body>
-		<div>
+		<div class="page-header">
 			<h1><a href="/">Cutest Cat</a></h1>
 		</div>
 
 		<br>
-
+		<!--
 		<div>
 			<h3>Rate cats below</h3>
 		<div>
+		-->	
 
-		<div>
+		<div class="cat_post">
 			<!-- Using django tags-->
 			{% for cat in cats %}
 				<div>

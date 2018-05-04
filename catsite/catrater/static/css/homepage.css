@@ -1,12 +1,24 @@
+.page-header {
+    background-color: #b9a8a4;
+    margin-top: 0;
+    padding-left: 0px;
+    padding: 20px 20px 10px 40px;
+}
+
+.cat-post {
+	padding-left: 30px;
+}
 h1 {
 		color: black;
 		text-align: center;
 	}
 
 h1 a {
-	color: black;
+	color: white;
 	text-align: center;
 	text-decoration: none;
+	font-family: 'Comfortaa', cursive;
+	font-size: 80px;
 }
 h2 {
 	text-align: left;
@@ -46,6 +58,3 @@ li a:hover {
     background-color: #111111;
 }
 
-body {
-    padding-left: 30px;
-}
