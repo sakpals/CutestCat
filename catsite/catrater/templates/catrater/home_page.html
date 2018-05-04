@@ -1,51 +1,12 @@
+{% load staticfiles %}
 <html>
 	<head>
 		<title>Cutest Cat</title>
+		<!-- adding bootstrap -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="{% static 'css/homepage.css' %}">
 	</head>
-	<style>
-	h1 {
-		color: black;
-		text-align: center;
-	}
-
-	h1 a {
-		color: black;
-		text-align: center;
-		text-decoration: none;
-	}
-	h2 {
-		text-align: left;
-		color: #76200b;
-	}
-	h3 {
-		color: black;
-		text-align: center;
-	}
-	ul {
-	    list-style-type: none;
-	    margin: 0;
-	    padding: 0;
-	    overflow: hidden;
-	    background-color: #222222;
-	}
-
-	li {
-	    float: left;
-	}
-
-	li a {
-	    display: block;
-	    color: white;
-	    text-align: center;
-	    padding: 16px;
-	    text-decoration: none;
-	}
-
-	li a:hover {
-	    background-color: #111111;
-	}
-
-	</style>
 	<body>
 		<div>
 			<h1><a href="/">Cutest Cat</a></h1>
@@ -61,7 +22,7 @@
 			<!-- Using django tags-->
 			{% for cat in cats %}
 				<div>
-					<h2>{{ cat.name }}</h2>
+					<h4><a href="">{{ cat.name }}</a></h4>
 					<img src= "{{ cat.photo }}" alt="Cat photo" height="200" width="200">
 					<br>
 					<em>"{{ cat.description }}"</em>
