@@ -8,6 +8,13 @@
 	padding-left: 30px;
 }
 
+.heart-button {
+	background-color: #ffffff;
+	height: 30px;
+	width: 30px;
+	color: #ea421b;
+	font-size: 30px;
+}
 h1 {
 		color: black;
 		text-align: center;

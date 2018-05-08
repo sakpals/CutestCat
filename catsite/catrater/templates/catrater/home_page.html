@@ -25,10 +25,10 @@
 			{% for cat in cats %}
 				<div>
 					<h4><a href=""> ~(=^–^) :: {{ cat.name }}</a></h4>
-					<img src= "{{ cat.photo }}" alt="Cat photo" height="200" width="200">
+					<img src= "{{ cat.photo.url }}" alt="cats" class="img-responsive img-rounded" width="200px" height="500px">
 					<br>
 					<em>"{{ cat.description|linebreaksbr }}"</em>
-					<p>Hearts: {{ cat.hearts }}</p>
+					<p>Hearts: {{ cat.hearts }}  <button type="button" class="heart-button">&hearts;</button></p>
 					<br><br>
 				</div>
 			{% endfor %}
