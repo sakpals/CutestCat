@@ -3,15 +3,14 @@
     margin-top: 0;
     padding: 20px 20px 10px 40px;
 }
-
-.cat-post {
-	float: left;
+.all-posts {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	padding-left: 30px;
-	width: 200px;
 }
 
-.indv-cat {
-	float: left;
+.cat-post {
+	width: 200px;
 }
 
 .heart-button {
@@ -23,9 +22,9 @@
 }
 
 h1 {
-		color: black;
-		text-align: center;
-	}
+	color: black;
+	text-align: center;
+}
 
 h1 a {
 	color: white;
@@ -52,28 +51,3 @@ h3 {
 h4 a {
 	font-family: 'Comfortaa', cursive;
 }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #222222;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111111;
-}
-
