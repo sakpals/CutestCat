@@ -5,7 +5,13 @@
 }
 
 .cat-post {
+	float: left;
 	padding-left: 30px;
+	width: 200px;
+}
+
+.indv-cat {
+	float: left;
 }
 
 .heart-button {
@@ -15,6 +21,7 @@
 	color: #ea421b;
 	font-size: 30px;
 }
+
 h1 {
 		color: black;
 		text-align: center;

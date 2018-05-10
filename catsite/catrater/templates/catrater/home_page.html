@@ -19,19 +19,23 @@
 			<h3>Rate cats below</h3>
 		<div>
 		-->	
-
+	
 		<div class="cat-post">
 			<!-- Using django tags-->
 			{% for cat in cats %}
-				<div>
+				<div class="indv-cat">
 					<h4><a href=""> ~(=^–^) :: {{ cat.name }}</a></h4>
 					<img src= "{{ cat.photo.url }}" alt="cats" class="img-responsive img-rounded" width="200px" height="500px">
 					<br>
 					<em>"{{ cat.description|linebreaksbr }}"</em>
-					<p>Hearts: {{ cat.hearts }}  <button type="button" class="heart-button">&hearts;</button></p>
+					<br><br>
+					<p>Hearts: {{ cat.hearts }}  
+					<button type="button">Love!</button>
+					</p>
 					<br><br>
 				</div>
 			{% endfor %}
 		</div>
+		
 	</body>
 </html>

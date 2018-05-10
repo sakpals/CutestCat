@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from django.db.models import F
 
 # Create your models here.
 
@@ -19,6 +20,6 @@ class Cat(models.Model):
 		return self.name
 
 	def like(self):
-		self.hearts += 1
-
+		self.hearts = F('hearts') + 1
+		self.save()
 
